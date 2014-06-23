@@ -1,0 +1,13 @@
+<div class="container bs-header" style="text-align:center;margin-top:50px;">
+	<h1><?php echo $row['title1'];?></h1>
+	<?php 
+		if($row['title2']){
+			echo "<h2>$row['title2']</h2>";
+		}
+	?>
+	<p class="col-lg-10 col-lg-offset-1 description"><?php echo $row['description'];?></p><br />
+</div>
+
+<div class="container" style="text-align:center;margin-top:120px;margin-bottom:150px">
+	<img src="<?php echo $row['pic'];?>" class="img-responsive" alt="Responsive image" style="display:inline" />
+</div>
